@@ -1,0 +1,267 @@
+:root {
+    --color-green: #8bd8bd;
+    --color-blue: #243665;
+    --color-text: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-blue);
+    color: var(--color-text);
+    padding: 80px 0 0;
+}
+
+.navbar {
+    background-color: var(--color-green);
+    color: var(--color-blue);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.navbar .logo {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.navbar .links-wrapper .links {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.navbar .links-wrapper .links .link a {
+    text-decoration: none;
+    color: var(--color-blue);
+}
+
+.navbar .links-wrapper .links .link a:hover {
+    color: var(--color-text);
+    transition: color 0.3s ease-in-out;
+}
+
+.section {
+    margin-top: 20px;
+    padding: 0 60px;
+}
+
+.section .title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 42px;
+    margin-bottom: 16px;
+}
+
+.about-arduino {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.about-arduino .description {
+    flex: 1;
+}
+
+.about-arduino .image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-arduino .image img {
+    max-width: 480px;
+    transform: rotate(-45deg);
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.projects .project:first-child {
+    width: 100%;
+}
+
+.projects .project:not(:first-child) {
+    flex: 1;
+    min-width: 260px;
+}
+
+.projects .project {
+    height: 250px;
+    background-image: url('./assets/arduino-project.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: rgba(139, 216, 189, 0.1) 0px 7px 29px 0px;
+    border-radius: 8px;
+}
+
+.projects .project .overlay {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background: linear-gradient(45deg, rgba(139, 216, 189, 0.8), rgba(21, 38, 78, 0.9));
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.projects .project .overlay .project-title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.projects .project .overlay .project-read-more {
+    color: var(--color-text);
+    background: var(--color-blue);
+    border-radius: 8px;
+    padding: 8px 16px;
+    text-decoration: none;
+    width: fit-content;
+    margin-top: 8px;
+}
+
+.projects .project .overlay .project-read-more:hover {
+    color: var(--color-green);
+    transition: color 0.3s ease-in-out;
+}
+
+.footer {
+    margin-top: 32px;
+    background-color: var(--color-green);
+    color: var(--color-blue);
+}
+
+.footer .links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 16px;
+}
+
+.footer .links .link a {
+    text-decoration: none;
+    color: var(--color-blue);
+}
+
+.footer .links .link a:hover {
+    color: var(--color-text);
+    transition: color 0.3s ease-in-out;
+}
+
+.footer .copyright {
+    padding: 16px;
+    text-align: center;
+}
+
+.project-page {
+    padding: 32px;
+}
+
+.project-page .title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.project-page .helpers {
+    padding: 0 32px 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.project-page .helpers .link {
+    background-color: var(--color-green);
+    border-radius: 4px;
+    padding: 8px 16px;
+    color: var(--color-blue);
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.project-page .helpers .link i {
+    margin-right: 8px;
+}
+
+.project-page .helpers .link:hover {
+    color: var(--color-text);
+}
+
+.project-page .description {
+    margin-bottom: 32px;
+    padding: 0 32px;
+}
+
+.project-page .media .image {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 16px;
+}
+
+.project-page .media .video {
+    max-width: 100%;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 16px;
+}
+
+.project-page .info {
+    margin-bottom: 16px;
+    padding: 0 32px;
+}
+
+.components-page {
+    padding: 32px;
+}
+
+.components-page .title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.components-page .description {
+    margin-bottom: 32px;
+    padding: 0 32px;    
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 0px;
+}
+
+.components-page .description .description-text {
+    grid-area: 2 / 2 / 2 / 3;
+    margin: auto 0;
+}
+
+.components-page .description .component-image {
+    grid-area: 2 / 1 / 2 / 2;
+    max-width: 100%;
+}
+
+.components-page .description .component-name {
+    margin-bottom: 8px;
+    
+}

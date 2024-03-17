@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <script type="application/javascript" src="../script.js"></script>
+        <title>Arduino Master</title>
+    </head>
+    <body>
+        <header class="navbar">
+            <div class="logo">Arduino Master</div>
+            <div class="links-wrapper">
+                <ul class="links">
+                    <li class="link">
+                        <a href="../index.html"><i class="fa-solid fa-house"></i> Acasa</a>
+                    </li>
+                    <li class="link">
+                        <a href="../index.html#about"
+                            ><i class="fa-solid fa-circle-info"></i> Despre Arduino</a
+                        >
+                    </li>
+                    <li class="link">
+                        <a href="../index.html#projects"
+                            ><i class="fa-solid fa-folder-open"></i> Proiecte</a
+                        >
+                    </li>
+                    <li class="link">
+                        <a href="../components/components.html"
+                            ><i class="fa-solid fa-microchip"></i> Componente</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <section class="components-page">
+            <h1 class="title"> Componente</h1>
+            <div class="description">
+                <h2 class="component-name">Arduino UNO</h2>
+                
+                <p class="description-text">
+                    &#x2022; Arduino Uno R3 este o placă de dezvoltare bazată pe microcontrollerul ATmega328. 
+                    <br> &#x2022; Are 14 pini de intrare/ieșire (dintre care 6 pot fi folosiți ca ieșiri PWM), 
+                    6 intrări analog, un oscilator de 16MHz, o conexiune USB, mufă de alimentare, și un buton de reset.
+                    <br> &#x2022; Poate fi alimentat direct de la calculator, de la portul USB, prin intermediul unei baterii de 9V sau a unui alimentator de 9V.
+                    <br> *PWM = Pulse-width modulation (cel mai eficient mod de a controla circuitele analogice folosind ieșirile numerice, prin modificarea duratei și frecvenței semnalului).
+                </p>
+                <img class="component-image" src="../assets/components/uno-r3.png" alt="uno-r3">
+            </div>
+            <div class="description">
+                <h2 class="component-name">LED</h2>
+                <p class="description-text">
+                    &#x2022; LED (din engleză light-emitting diode) = diodă emițătoare de lumină.
+                    <br> &#x2022;  Un LED are două terminale: anod (terminalul pozitiv) și catod (terminalul negativ).
+                    <br> &#x2022; Anodul este terminalul mai lung, iar catodul este cel mai scurt.
+                    <br> &#x2022; Întotdeauna când folosim un LED, trebuie sa folosim și un rezistor în serie cu LED-ul. Rezistorul corespunzator pentru LED est cel de 220 ohmi.
+                </p>
+                <img class="component-image" src="../assets/components/led.png" alt="led">
+            </div>
+            <div class="description">
+                <h2 class="component-name">Resistor</h2>
+                <p class="description-text">
+                    &#x2022; Scopul rezistorului este de a restricționa cantitatea de curent care trece prin rezistor în LED, cu cât este mai mare rezistența, cu atât mai puțin curent va trece prin rezistor.
+                    <br> &#x2022; Unitatea de măsura pentru rezistență este Ohm, fiind folosit simbolul &#937;
+                    <br> &#x2022; Rezistorii arată la fel, dar au dungi colorate care îi diferențiază, reprezentând un cod de culori din care putem afla rezistența unui rezistor.
+                </p>
+                <img class="component-image" src="../assets/components/resistor.png" alt="resistor">
+            </div>
+            <div class="description">
+                <h2 class="component-name">Fire de legătură</h2>
+                <p class="description-text">
+                    &#x2022; Folosim firele de legătură pentru a conecta componentele între ele.
+                    <br> &#x2022; Acestea pot fi de tip tată-tată, mamă-mamă sau mamă-tată.
+                
+                </p>
+                <img class="component-image" src="../assets/components/wires.png" alt="wires">
+            </div>
+            <div class="description">
+                <h2 class="component-name">Breadboard</h2>
+                <p class="description-text">
+                    &#x2022; Un breadboard este un dispozitiv simplu conceput care permite crearea de circuite fără a fi nevoie de lipire.
+                    <br> &#x2022; Componentele folosite pentru proiectele Arduino se conectează la placă cu ajutorul breadboard-ului.
+                    <br> &#x2022; Zonele principale, folosite pentru a susține majoritatea componentelor electronice, sunt numite benzi terminale.
+                </p>
+                <img class="component-image" src="../assets/components/breadboard.png" alt="breadboard">
+            </div>
+            <div class="description">
+                <h2 class="component-name">Buton</h2>
+                <p class="description-text">
+                    &#x2022; Butoanele conectează două puncte dintr-un circuit atunci când le apăsați.
+                    <br> &#x2022; Astfel, cu ajutorul unui buton putem stinge sau aprinde un LED.
+                </p>
+                <img class="component-image" src="../assets/components/button.png" alt="button">
+            </div>
+            <div class="description">
+                <h2 class="component-name">Passive Buzzer</h2>
+                <p class="description-text">
+                    &#x2022; Soneriile pasive au nevoie de un semnal de undă pătrată pentru a produce sunet.
+                    <br> &#x2022; Schimbând frecvența undei pătrate puteți schimba înălțimea sunetului.
+                </p>
+                <img class="component-image" src="../assets/components/buzzer.png" alt="buzzer">
+            </div>
+        </section>
+        <footer class="footer">
+            <ul class="links">
+                <li class="link">
+                    <a href="../index.html"><i class="fa-solid fa-house"></i> Acasa</a>
+                </li>
+                <li class="link">
+                    <a href="../index.html#about"><i class="fa-solid fa-circle-info"></i> Despre Arduino</a>
+                </li>
+                <li class="link">
+                    <a href="../index.html#projects"><i class="fa-solid fa-folder-open"></i> Proiecte</a>
+                </li>
+                <li class="link">
+                    <a href="../components/components.html"><i class="fa-solid fa-microchip"></i> Componente</a>
+                </li>
+            </ul>
+            <p class="copyright">Atestat Informatică @ Bogdan Țica</p>
+        </footer>
+    </body>
+</html>
